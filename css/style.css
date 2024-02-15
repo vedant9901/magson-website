@@ -2,7 +2,7 @@
 :root {
     --primary: #F86E2F;
     --secondary: #525368;
-    --light: #E8F5E9;
+    --light: #efefef;
     --dark: #F86E2F;
     --lighter-primary: #fb9566;
     --black: #ffffff;
@@ -353,8 +353,6 @@ h6,
     height: 100%;
     top: 0;
     left: 0;
-    background: rgba(15, 66, 41, .6);
-    transition: .5s;
 }
 
 .portfolio-inner::after {
@@ -513,7 +511,7 @@ h6,
 
 .copyright {
     color: var(--light);
-    background: #072A19;
+    background: var(--lighter-primary);
 }
 
 .copyright a {
@@ -532,9 +530,14 @@ h6,
     padding-right: 2px;
 }
 
+.pl-2{
+    padding-left: 2px;
+}
+
 .pr-5{
     padding-right: 5px;
 }
+
 
 .d-block{
     display: block;
@@ -617,3 +620,68 @@ h6,
     box-shadow: 0 10px 20px rgba(86, 86, 198, 0.3);
   }
 
+  .hero-banner {
+    position: relative;
+    padding-bottom: 70%;
+    overflow: hidden;
+}
+.banner-with-video video.video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    top: 0;
+    left: 0;
+}
+
+.m-20{
+    margin-top: 0px;
+    margin: 20px
+}
+
+.bg-lighter-primary{
+    background-color: var(--lighter-primary);
+    color: white;
+}
+
+.bg-primary{
+    background-color: var(--primary) !important;
+    color: white;
+}
+
+.bg-light-white{
+    background-color: var(--light);
+}
+.btn-primary{
+    background-color: var(--primary);
+    border: none;
+}
+
+.btn-primary:hover{
+    background-color: var(--lighter-primary);
+}
+
+@media (max-width: 1199.98px) {
+    
+}
+
+@media (max-width: 1024.98px) {
+    .top-feature .px-5{
+        padding: 20px !important;
+        justify-content: center;
+    }
+
+    .top-feature .ps-3{
+        padding-left: 0px !important;
+        padding-top: 20px;
+    }
+
+    .top-feature .btn-lg-square{
+        margin: auto;
+    }
+
+    .top-feature .d-xl-flex{
+        text-align: center;
+    }
+}
