@@ -5,7 +5,7 @@
     --light: #efefef;
     --dark: #F86E2F;
     --lighter-primary: #fb9566;
-    --black: #ffffff;
+    --black: #000000;
     --blue: #0000CC;
 }
 
@@ -544,7 +544,7 @@ h6,
 }
 
 .a{
-    color: var(--blue) !important;
+    color: #525368 !important;
     text-decoration: none;
 }
 
@@ -681,6 +681,37 @@ h6,
 .text-red{
     color: red;
 }
+
+
+.card {
+    margin-bottom: 1rem;
+ }
+ 
+ 
+ .list-view {
+   .row {
+     > [class*='col-'] {
+       max-width: 100%;
+       flex: 0 0 100%;
+     }
+   }
+   .card {
+     @media (max-width: 575.98px) {
+      flex-direction: column;
+     }
+     flex-direction: row;
+     > .card-img-top {
+      width: auto;
+     }
+     
+     .card-body {
+       display: inline-block;
+     }
+   }
+ }
+ 
+
+ 
 @media (max-width: 767.98px) {
     .storeList .row-cols-1 {
         flex-direction: row;
