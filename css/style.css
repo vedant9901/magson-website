@@ -504,7 +504,7 @@ h6,
 }
 
 .footer .btn.btn-link:hover {
-    color: var(--primary);
+    color: var(--black);
     letter-spacing: 1px;
     box-shadow: none;
 }
@@ -574,7 +574,8 @@ h6,
   }
   
   .profile:hover {
-    transform: translateY(25px);
+    transform: translateY(-25px);
+    z-index: 9999;
   }
   
   .profile img {
@@ -589,7 +590,7 @@ h6,
     margin-left: -20px;
   }
    */
-  .profile .name {
+  /* .profile .name {
     position: absolute;
     background-color: var(--primary);
     color: #fff;
@@ -618,7 +619,7 @@ h6,
     opacity: 1;
     transform: translateX(-50%);
     box-shadow: 0 10px 20px rgba(86, 86, 198, 0.3);
-  }
+  } */
 
   .hero-banner {
     position: relative;
@@ -662,8 +663,32 @@ h6,
     background-color: var(--lighter-primary);
 }
 
-@media (max-width: 1199.98px) {
-    
+.profile {
+    text-align: center;
+    position: relative;
+}
+
+.name {
+    display: block;
+    position: relative;
+    bottom: 0; /* Position the name at the bottom */
+    width: 100%; /* Make the name span the full width of its parent */
+    padding: 5px 0; /* Adjust padding as needed */
+    font-weight: bold;
+    z-index: 1;
+}
+
+.text-red{
+    color: red;
+}
+@media (max-width: 767.98px) {
+    .storeList .row-cols-1 {
+        flex-direction: row;
+    }
+    .storeList .col {
+        flex: 0 0 50%; /* Display two columns per row */
+        max-width: 50%;
+    }
 }
 
 @media (max-width: 1024.98px) {
