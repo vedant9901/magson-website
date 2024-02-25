@@ -7,6 +7,7 @@
     --lighter-primary: #fb9566;
     --black: #000000;
     --blue: #0000CC;
+    --red: #FF0000;
 }
 
 
@@ -805,7 +806,7 @@ h6,
     background-color: #eee;
     z-index: -1;
   }
-  
+
 .timeline {
     position: relative;
     width: 100%;
