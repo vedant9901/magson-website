@@ -140,6 +140,9 @@ h6,
     .navbar .navbar-nav {
         border-top: 1px solid #EEEEEE;
     }
+    .hero-banner{
+        padding-bottom: 500px !important;
+    }
 }
 
 @media (min-width: 992px) {
@@ -231,12 +234,29 @@ h6,
 
 
 /*** Facts & Quote ***/
-.facts,
-.quote {
-    background: var(--lighter-primary);
-    opacity: 90%;
+.facts {
+    /* background: var(--lighter-primary);
+    opacity: 90%; */
+    background-image: url("../img/magson-store-Image.png") ;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+}
+.facts > .container {
+    position: relative;
 }
 
+.facts:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    background: var(--lighter-primary);
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+}
 
 /*** Service ***/
 .service-item {
@@ -605,7 +625,7 @@ h6,
     max-width: 60%;
     border-radius: 50%;
     border: 5px solid #f7f7f7;
-    filter: drop-shadow(-20px 0 10px rgba(0, 0, 0, 0.1));
+    /* filter: drop-shadow(-20px 0 10px rgba(0, 0, 0, 0.1)); */
     cursor: pointer;
 }
 
@@ -659,7 +679,7 @@ h6,
 
 .hero-banner {
     position: relative;
-    padding-bottom: 70%;
+    padding-bottom: 700px;
     overflow: hidden;
 }
 
@@ -1020,6 +1040,7 @@ h6,
   }
  
   .text-align-last{text-align-last: center}
+  
   @media (max-width: 768px) {
     .timeline .timeline-continue::after {
       left: 40px;
@@ -1071,6 +1092,7 @@ h6,
 @media screen and (min-width: 577px) {
     .cards-wrapper {
         display: flex;
+        justify-content: center;
     }
 
     .card_videos {
@@ -1101,6 +1123,11 @@ h6,
         /* Display two columns per row */
         max-width: 50%;
     }
+
+    .hero-banner{
+        padding-bottom: 300px !important;
+    }
+
 }
 
 @media (max-width: 1024.98px) {
