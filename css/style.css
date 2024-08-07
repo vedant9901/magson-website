@@ -849,6 +849,15 @@ h6,
     text-decoration: underline !important;
 }
 
+.link-black {
+    color: var(--black) !important;
+    text-decoration: underline !important;
+}
+
+.link-black :hover{
+    color: var(--black) !important;
+    text-decoration: underline !important;
+}
 .carousel-inner {
     padding: 1em;
 }
