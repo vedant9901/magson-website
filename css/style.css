@@ -1261,6 +1261,48 @@ h6,
     text-decoration: none;
     cursor: pointer;
   }
+
+  /* Define the keyframes for the pulse effect */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.7;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Styling for the link with pulse effect */
+.nav-link-shop-now {
+    position: relative;
+    text-decoration: underline;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    color: #222f3e;
+    text-decoration: none;
+    border-radius: 3px;
+    overflow: hidden;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Pulse effect on hover */
+.nav-link-shop-now {
+    animation: pulse 1.5s infinite;
+}
+
+/* Optional styling for focus state */
+.nav-link-shop-now:focus {
+    outline: none;
+}
 @media (max-width: 768px) {
     .timeline .timeline-continue::after {
         left: 40px;
