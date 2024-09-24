@@ -1411,3 +1411,29 @@ h6,
         text-align: center;
     }
 }
+
+.career-card {
+    position: relative; /* Needed for the pseudo-element */
+    transition: transform 0.3s; /* Optional: for a smooth scaling effect */
+}
+
+.career-card:hover {
+    transform: scale(1.02); /* Optional: slightly scales the card */
+}
+
+.career-card::before {
+    content: "";
+    position: absolute;
+    top: -5px; /* Adjusts the distance of the border */
+    left: -5px; /* Adjusts the distance of the border */
+    right: -5px; /* Adjusts the distance of the border */
+    bottom: -5px; /* Adjusts the distance of the border */
+    border: 2px solid #FF8D00; /* Orange border */
+    opacity: 0; /* Start with invisible border */
+    transition: opacity 0.3s; /* Smooth transition for the border */
+    z-index: -1; /* Send the border behind the card */
+}
+
+.career-card:hover::before {
+    opacity: 1; /* Show border on hover */
+}
