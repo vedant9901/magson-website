@@ -1,3 +1,31 @@
-[
-   
+[{
+    "id": "MAG001",
+    "title": "Retail Store Executive",
+    "location": "Ahmedabad, Gujarat, India",
+    "vacancies": 10,
+    "experience_required": "0 – 3 years",
+    "about_us": "NastaBazar is a leading name in the snacking industry, dedicated to delivering high-quality local Indian snacks, gourmet treats, and chocolates. We pride ourselves on our customer-centric approach and strive to enhance the snacking experience of our clients.",
+    "job_overview": "We are looking for a motivated and enthusiastic Retail Store Executive to join our dynamic team. The ideal candidate will be responsible for driving sales and enhancing customer satisfaction through excellent service and relationship management.",
+    "key_responsibilities": [
+      "Customer Service",
+      "Customer Engagement",
+      "Cross Selling",
+      "Store Operations"
+    ],
+    "qualifications": {
+      "education": "Minimum 12th Pass",
+      "experience": "0.6 – 3 years of experience in sales, preferably in the food and beverage industry",
+      "skills": [
+        "Strong communication and interpersonal skills"
+      ]
+    },
+    "what_we_offer": [
+      "Competitive salary with performance-based incentives",
+      "Opportunity for professional growth and development",
+      "A dynamic and supportive work environment",
+      "Employee discounts on our products"
+    ],
+    "how_to_apply": "If you are excited about the opportunity to be a part of our team and drive sales for NastaBazar, please send your resume and a cover letter to hr@nastabazar.com. We look forward to hearing from you!",
+    "equal_opportunity": "NastaBazar is an equal opportunity employer. We celebrate diversity and are committed to creating an inclusive environment for all employees."
+  }
 ]

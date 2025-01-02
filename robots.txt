@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+Disallow: /checkout/
+Disallow: /cart/
+Disallow: /my-account/
+
+Allow: /
+Sitemap: https://magson.in/sitemap.xml

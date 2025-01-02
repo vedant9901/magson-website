@@ -1,0 +1,12 @@
+RewriteEngine On
+
+# Redirect duplicate URLs to the correct ones
+RewriteRule ^files/AnnualReports/Annual_Report_2019-20\.pdf$ https://magson.in/files/AnnualReports/Annual%20Report_2019-20.pdf [L,R=301]
+RewriteRule ^storeList/investorCorner\.html$ https://magson.in/investorCorner.html [L,R=301]
+RewriteRule ^careers$ https://magson.in/careers.html [L,R=301]
+RewriteRule ^files/Board%20Meeting%20Outcome_Change%20of%20Director$ file:///A:/Magson%20VIMP/Projects/magson-website/files/Board%20Meeting%20Outcome_23.08.2024.pdf [L,R=301]
+RewriteRule ^awards$ https://magson.in/awards.html [L,R=301]
+RewriteRule ^files/:%20https:/www\.statista\.com/statistics/1278187/india-food-industry-value-by-channel/$ https://www.statista.com/statistics/1278187/india-food-industry-value-by-channel/ [L,R=301]
+
+# Optionally, you can add rules to handle cases where there are spaces or special characters.
+RewriteRule ^files/:%20(.*)$ https://www.magson.in/files/$1 [L,R=301]
