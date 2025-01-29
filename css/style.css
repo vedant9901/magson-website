@@ -1437,3 +1437,239 @@ h6,
 .career-card:hover::before {
     opacity: 1; /* Show border on hover */
 }
+
+/* Basic styling for the container */
+.brandList {
+    padding: 20px 0;
+}
+
+/* Styling for carousel items */
+.owl-carousel-brandList #data-div{
+    padding: 20px;
+    background-color: #ffffff !important;
+}
+
+/* Styling for carousel items */
+.owl-carousel-brandList .item {
+    text-align: center;
+    padding: 20px;
+    margin: 0 15px; /* Added margin to space items */
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.owl-carousel-brandList .item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling the images */
+.owl-carousel-brandList .item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.owl-carousel-brandList .item:hover img {
+    transform: scale(1.1);
+}
+
+/* Styling the text */
+.owl-carousel-brandList .item h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin: 15px 0;
+}
+
+.owl-carousel-brandList .item p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Adjust space between carousel items */
+.owl-carousel-brandList .owl-item {
+    margin-right: 15px;
+}
+
+/* Center the carousel container */
+.owl-carousel-brandList.version-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Responsive design for carousel items */
+@media (max-width: 1200px) {
+    .owl-carousel-brandList .item {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .owl-carousel-brandList .item {
+        max-width: 95%;
+    }
+}
+
+/* Make sure the owl-carousel is not too wide on smaller screens */
+@media (max-width: 576px) {
+    .owl-carousel-brandList .item {
+        max-width: 100%; /* Ensure full width for smaller screens */
+    }
+}
+
+/* Styling for the owl carousel navigation (optional) */
+.owl-carousel-brandList .owl-nav button {
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    color: #007bff;
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+}
+
+.owl-carousel-brandList .owl-nav button:hover {
+    opacity: 1;
+}
+
+.owl-carousel-brandList .owl-prev {
+    left: -30px;
+}
+
+.owl-carousel-brandList .owl-next {
+    right: -30px;
+}
+
+/* Styling dots (optional) */
+.owl-carousel-brandList .owl-dots .owl-dot span {
+    background-color: #007bff;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 5px;
+}
+
+.owl-carousel-brandList .owl-dots .owl-dot.active span {
+    background-color: #0056b3;
+}
+
+
+#data-div {
+    text-align: center;  /* Center align the content */
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#data-div:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+#data-card img {
+    max-width: 100%; /* Ensure the image does not exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px;
+    object-fit: contain; /* Ensure the image doesn't get distorted */
+    margin-bottom: 15px; /* Space between image and text */
+    max-height: 150px; /* Set a maximum height for the image */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    #data-card img {
+        max-height: 120px; /* Adjust max height for smaller screens */
+    }
+}
+
+#data-div h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin: 15px 0;
+}
+
+#data-div p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Container for the carousel item */
+.item {
+    display: flex;
+    justify-content: center; /* Center the card inside the item */
+    align-items: stretch; /* Ensure all cards stretch to the same height */
+}
+
+/* Card styles */
+.card {
+    width: 100%; /* Full width of the container */
+    max-width: 350px; /* Limit the card width */
+    background-color: #fff; /* White background for the card */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow around the card */
+    overflow: hidden; /* Hide content that overflows */
+    transition: transform 0.3s ease-in-out; /* Smooth transition for hover effect */
+    padding: 20px; /* Inner padding for the content */
+    margin: 10px; /* Space between items */
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Ensure cards fill the container's height */
+}
+
+/* Card Image */
+.card img {
+    width: 100%; /* Make image fill the card */
+    height: 200px; /* Fixed height for the image */
+    object-fit: contain; /* Ensure the image covers the area */
+    border-radius: 8px; /* Rounded corners for the image */
+}
+
+/* Card Title */
+.card h2 {
+    display: flex;
+    font-size: 1rem; /* Font size for the title */
+    font-weight: bold; /* Make the title bold */
+    margin: 15px 0; /* Add spacing above and below the title */
+    color: #333; /* Dark gray color for the text */
+    flex-grow: 0; /* Prevent title from growing */
+}
+
+/* Card Description */
+.card p {
+    font-size: 1rem; /* Regular font size for the description */
+    color: #666; /* Lighter gray color for the description */
+    line-height: 1.6; /* Increase line height for better readability */
+    text-align: justify; /* Justify the text to give it a clean look */
+    flex-grow: 1; /* Allow description to take up remaining space */
+    margin-bottom: 15px; /* Space at the bottom */
+    overflow: hidden; /* Hide overflow if text is too long */
+    text-overflow: ellipsis; /* Add ellipsis for overflow text */
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Limit the description to 3 lines */
+    -webkit-box-orient: vertical;
+}
+
+/* Hover effect on the card */
+.card:hover {
+    transform: translateY(-10px); /* Slight lift effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase the shadow on hover */
+}
+
+/* Responsive: Stack cards on small screens */
+@media (max-width: 767px) {
+    .card {
+        max-width: 100%; /* Allow the card to take up full width on smaller screens */
+    }
+}
+

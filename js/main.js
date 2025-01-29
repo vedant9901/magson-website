@@ -73,7 +73,38 @@
             '<i class="bi bi-chevron-right"></i>'
         ]
     });
-
+    $(document).ready(function(){
+        $(".owl-carousel").owlCarousel({
+            items: 2,  // Number of items to show at once
+            margin: 20,  // Space between items
+            loop: true,  // Infinite loop
+            autoplay: true,  // Autoplay
+            autoplayTimeout: 3000,  // Autoplay timeout (in ms)
+            responsive: {
+                0: {
+                    items: 1  // Show 1 item on extra small screens (mobile)
+                },
+                480: {
+                    items: 1  // Show 1 item on small screens (portrait mobile)
+                },
+                600: {
+                    items: 2  // Show 2 items on medium screens (tablet or larger mobile)
+                },
+                768: {
+                    items: 2  // Show 2 items on larger medium screens (small tablet)
+                },
+                992: {
+                    items: 3  // Show 3 items on large tablets (portrait view) or small desktops
+                },
+                1200: {
+                    items: 4  // Show 4 items on larger desktops (wide screen)
+                },
+                1600: {
+                    items: 5  // Show 5 items on very large screens (extra large desktops)
+                }
+            }
+        });
+    });
     
 })(jQuery);
 

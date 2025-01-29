@@ -316,5 +316,30 @@ $(function () {
         interval: 5000
      });
 
+// Slider version 2
+$('.owl-carousel.version-2').owlCarousel({
+    loop: true,
+    margin: 15,
+    center: true, // Highlight the center item
+    navText: ["<", ">"], // Optional: Custom navigation arrows
+    responsiveClass: true,
+    autoplay: true, // Optional: Add autoplay
+    autoplayTimeout: 3000, // Optional: Set autoplay delay (ms)
+    autoplayHoverPause: true, // Optional: Pause on hover
+    responsive: {
+        0: {
+            items: 1,
+            nav: true
+        },
+        600: {
+            items: 2,
+            nav: false
+        },
+        1000: {
+            items: 3,
+            nav: true
+        }
+    }
+});
 
 });
